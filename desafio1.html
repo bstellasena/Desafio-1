@@ -1,79 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web 3.0 Blog</title>
-  <link rel="stylesheet" href="desafio.css">
+  <meta charset="UTF-8" /> <!-- conjunto de caracteres que vou usar, prmite acentos, simbolos etc -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- usa a largura real em dispositivos moveis, zoom normal, sem ampliar ou reduzir -->
+  <title>desafio1</title>
+  <link rel="stylesheet" href="desafio.css"> <!-- o rel diz que esse arquivo desfio.css eh uma uma folha de estilos que deve ser aplicada no html --> 
 </head>
 <body>
-  <header>
+  <header> <!-- cabecalho, fica em cima-->
     <div class="logo">W.</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#" class="active">New</a></li>
-        <li><a href="#" class="active">Popular</a></li>
-        <li><a href="#" class="active">Trending</a></li>
-        <li><a href="#" class="active">Categories</a></li>
+    <nav> <!-- semntica de menu de navegacao do site -->
+      <ul> <!-- lista nao ordenada-->
+        <li><a href="#">Home</a></li> <!-- e utilizado para quando queremos por um link mas deixa p mais tarde, mas se clicado vai pro comeco da pag tb -->
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="https://via.placeholder.com/600x300.png?text=Hero+Image" alt="Hero Image">
-      <div class="hero-text">
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div class="hero-description">
-          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          <a href="#" class="read-more">READ MORE</a>
-        </div>
-      </div>
-    </section>
+  <main> <!-- conteudo principal - td q nao for cabecalho, menu, rodape barra lateral etc-->
+    <section class="principal"> <!-- agrupo conteudo relacionado-->
+  <div class="principal-imagem"> <!-- a imagem peguei do google pq n tava dando certo colocar ela no projeto-->
+    <img src="https://images.unsplash.com/photo-1651611243377-2c15b94ad613?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMwfHx8ZW58MHx8fHx8"/>
+<div class="principal-texto-conteudo"> <!-- uma div com duas divs dentro pra poder ficar certinho no site-->
+  <div class="principal-textoT">
+    <h1>The Bright Future of Web 3.0?</h1>
+    </div>
+  <div class="principal-textoC">
+    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+    <a href="#" class="read-more">READ MORE</a>
+    </div>
+ </div>
+</section>
 
-    <aside class="new-section">
+
+    <aside class="new-section"> <!-- complementar conteudo principal, barra lateral, informacoes adiconais-->
       <h2>New</h2>
       <div class="new-item">
-        <h3>Hydrogen VS Electric Cars</h3>
+        <a href="#" class="linky"><h3>Hydrogen VS Electric Cars</h3></a> <!-- o a para criar o link novamente e o cursor passar e ver q eh link-->
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </div>
+      </div> <br>
+      <hr> <br> <!--br para ajustar na caixa do new e hr para colocar as linhas assim como estava no site original-->
       <div class="new-item">
-        <h3>The Downsides of AI Artistry</h3>
+        <a href="#" class="linky"><h3>The Downsides of AI Artistry</h3></a>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
-      </div>
+      </div><br>
+      <hr><br>
       <div class="new-item">
-        <h3>Is VC Funding Drying Up?</h3>
+        <a href="#" class="linky"><h3>Is VC Funding Drying Up?</h3></a>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </div>
+      </div><br>
     </aside>
 
-    <section class="articles">
+    <section class="articles"> <!-- secao criada para agrupar os artigos de baixo-->
       <div class="article">
-        <img src="https://via.placeholder.com/100.png?text=01" alt="">
+        <img src="https://d2l2bio4w79xfz.cloudfront.net/media/cache/8c/2d/8c2d6ec5b3c6b30997f642e9b1f62d73.webp"/>
         <div>
-          <h4>01</h4>
-          <h5>Reviving Retro PCs</h5>
+          <h4>01</h4> <!-- divs para ficar com a organizacao certinha-->
+          <a href="#" class="linky2"><h5>Reviving Retro PCs</h5></a>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
       <div class="article">
-        <img src="https://via.placeholder.com/100.png?text=02" alt="">
+        <img src="https://navinabala.neocities.org/intern/int%20img3.jpg"/>
         <div>
           <h4>02</h4>
-          <h5>Top 10 Laptops of 2022</h5>
+          <a href="#" class="linky2"><h5>Top 10 Laptops of 2022</h5></a>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </div>
       <div class="article">
-        <img src="https://via.placeholder.com/100.png?text=03" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEl8WxTDJPHzodQp9HwNuojUYrhnnBS1qp1oGkn0L9kyifCLmMY7B6Bp4CrAE84tA00ak&usqp=CAU"/>
         <div>
           <h4>03</h4>
-          <h5>The Growth of Gaming</h5>
+          <a href="#" class="linky2"><h5>The Growth of Gaming</h5></a>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
     </section>
-  </main>
+  </main> <!-- finalizando td q abri-->
 </body>
 </html>
